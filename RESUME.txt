@@ -1,0 +1,86 @@
+Rahul Singh
+
+Software Engineer
+
+Contact
+
+Email:
+rahul.works.sde@gmail.com
+
+Phone:
++91 98185 59742
+
+Address:
+Bengaluru, Karnataka, 560029
+
+LinkedIn:
+https://www.linkedin.com/in/grayhat/
+
+Website:
+https://github.com/GrayHat12
+
+Professional Summary
+
+Innovative Software Engineer with a proven track record at Karza Technologies, where I specialized in full-stack development and system design to deliver cost-effective, scalable solutions. My expertise in delivering performant solutions, such as PDF Generation and Serverless testing, alongside my ability to enhance product efficiency and developer productivity, positions me to tackle and lead complex technical projects effectively
+
+Experience
+
+Senior Member Technical Team
+Karza Technologies, Bengaluru, Karnataka / Apr 2024 - Present
+
+Improved the existing PDF generation solution to be 50% faster and 75% cheaper on lambda.
+Pioneered a new PDF generation solution for the next iteration of our product to increase scalability and remove frontend dependency.
+
+Software Engineer
+Karza Technologies, Bengaluru, Karnataka / Jul 2022 - Apr 2024
+
+Developed a plug and play GSP module to optimize calls reducing our cost, providing fallback mechanisms, rate limits and quota controls for GSP usage in our services.
+Collaborated with the data science team to develop an in-house PDF parsing solution for GST reports saving cost on third party dependencies.
+Developed a CLI tool enabling developers to test our serverless code locally enabling faster development.
+Redesigned various client and internal configurations allowing easier updates, more scalable design and ensuring our client's on-premise deployment needs.
+Created configuration driven plugins for our webhook module to support different Authentication and Encryption requirements in our product.
+
+Software Engineer Intern
+Karza Technologies, Bengaluru, Karnataka / Dec 2021 - Jul 2022
+
+Worked to the development of FIU product following all compliances.
+Contributes to an organization level webhook module implementing PGP and JWT authentication.
+Streamlined the billing systems improving dashboard latencies and reducing invoicing time from days to minutes.
+Contributed to an organization wide on-demand encryption module.
+Built an HA-Proxy monitoring solution with email alerts and a desktop application.
+
+Software Engineer Intern
+Fridayy AIAug 2021 - Dec 2021
+
+Developed the microservices architecture backend for a B2C application running on ECS.
+Developed a B2B web application that consists of a rule engine for creating and deploying smart campaign contracts to lambda function.
+Developed an SMS categorization and parsing/data extraction module using ML that powered our B2C mobile application.
+
+Software Engineer Intern
+ReferPleaseMar 2021 - Aug 2021
+
+Developed a neural network that works as a moderator for the platform.
+Developed a web scraping solution to regularly scrape multiple sources to find relevant tech job referral posts, verify them with our moderator and add them to the platform.
+Developed a PWA for the platform that functions as a mobile, desktop and web app.
+Worked with the founders in assisting our users, technical support, A/B Testing and customer feedback.
+
+Education
+
+Sharda University
+Greater Noida
+
+BTECH
+Computer Science and Engineering(Jul 2022)
+
+Skills
+
+MongoDB
+Python / Golang / Java / JS / Rust
+Docker
+Machine Learning
+Web Technologies
+API design
+Amazon Web Services
+Performance Optimization
+System Design
+A/B Testing
