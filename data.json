@@ -4,6 +4,7 @@
         "author": "Rahul Singh",
         "keywords": ["resume", "rahul", "sde", "backend", "engineer", "open source", "software engineer"]
     },
+    "template": "default_template.typ",
     "showLinkUnderlines": true,
     "heading": {
         "head": "Rahul Singh",
@@ -26,6 +27,9 @@
         "enabled": true,
         "inset": 4,
         "radius": 2,
+        "topMargin": 10,
+        "bottomMargin": 0,
+        "spacing": 4,
         "fill": "#e6e6e6",
         "heading": "Skills",
         "items": ["MongoDb", "Python / Golang / Java / JS / Rust", "Docker", "API Design", "System Design", "Web Technologies", "Amazon Web Services", "Performance Optimization", "A/B Testing", "Machine Learning"]
