@@ -6,8 +6,12 @@
     keywords: utils.config.document.keywords,
 )
 
+#let linkStyle = none
+
 #if utils.config.showLinkUnderlines {
-    show link: underline
+    linkStyle = underline
 }
+
+#show link: linkStyle
 
 #eval("#include "+repr(utils.config.template), mode: "markup")

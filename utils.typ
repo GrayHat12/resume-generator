@@ -4,40 +4,44 @@
     return [
         #align(center)[
             = #config.heading.head
-            ]
+		]
+		#let socials = ()
+		#for (index, item) in config.heading.links.enumerate() {
+			socials.push([
+				#link(item.link)[
+					#item.text
+				]
+			])
+			if index < (config.heading.links.len() - 1) {
+				socials.push([
+					#line(length: 10pt, angle: 90deg)
+				])
+			}
+		}
 
-            #let socials = ()
-            #for item in config.heading.links {
-            socials.push([
-                #link(item.link)[
-                #item.text
-                ]
-            ])
-            }
-
-            #align(center)[
-            #stack(dir: ltr, spacing: 10pt, ..socials)
+		#align(center)[
+			#stack(dir: ltr, spacing: 10pt, ..socials)
         ]
     ];
 }
 
 #let defaultSkillsRenderer() = {
-  if config.skills.enabled {
-    v(1pt * config.skills.topMargin)
-    return [
-      == #config.skills.heading
-      #line(length: 100%)
-      #for skill in config.skills.items {
-          box(
-              fill: rgb(config.skills.fill),
-              inset: 1pt * config.skills.inset,
-              radius: 1pt * config.skills.radius,
-          )[*#skill*]
-          h(1pt * config.skills.spacing)
-      }
-    ]
-    v(1pt * utils.config.skills.bottomMargin)
-  }
+	if config.skills.enabled {
+		return [
+			#v(1pt * config.skills.topMargin)
+			== #config.skills.heading
+			#line(length: 100%)
+			#for skill in config.skills.items {
+				box(
+					fill: rgb(config.skills.fill),
+					inset: 1pt * config.skills.inset,
+					radius: 1pt * config.skills.radius,
+				)[*#skill*]
+				h(1pt * config.skills.spacing)
+			}
+		]
+		v(1pt * utils.config.skills.bottomMargin)
+	}
 }
 
 #let defaultBlockRenderer(index, section, singleBlock) = {

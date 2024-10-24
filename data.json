@@ -29,7 +29,7 @@
         "radius": 2,
         "topMargin": 10,
         "bottomMargin": 0,
-        "spacing": 4,
+        "spacing": 2,
         "fill": "#e6e6e6",
         "heading": "Skills",
         "items": ["MongoDb", "Python / Golang / Java / JS / Rust", "Docker", "API Design", "System Design", "Web Technologies", "Amazon Web Services", "Performance Optimization", "A/B Testing", "Machine Learning"]
