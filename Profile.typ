@@ -1,19 +1,18 @@
-#align(center)[
-  = Rahul Singh
-]
+#import "utils.typ"
 
 #align(center)[
-  #stack(dir: ltr, spacing: 10pt)[
-    #link("mailto:rahul.works.sde@gmail.com")[
-      #"rahul.works.sde@gmail.com"
+  = #utils.config.heading.head
+]
+
+#let socials = ()
+#for item in utils.config.heading.links {
+  socials.push([
+    #link(item.link)[
+      #item.text
     ]
-  ][#line(length: 10pt, angle: 90deg)][
-    #link("https://www.linkedin.com/in/grayhat/")[
-      grayhat
-    ]
-  ][#line(length: 10pt, angle: 90deg)][
-    #link("https://github.com/GrayHat12")[
-      github.com/GrayHat12
-    ]
-  ]
+  ])
+}
+
+#align(center)[
+  #stack(dir: ltr, spacing: 10pt, ..socials)
 ]

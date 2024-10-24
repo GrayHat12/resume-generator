@@ -1,0 +1,1 @@
+#let config = json("data.json")
