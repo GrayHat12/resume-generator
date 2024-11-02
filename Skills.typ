@@ -55,3 +55,8 @@
   inset: inset,
   radius: radius,
 )[*Machine Learning*]
+#box(
+  fill: fill,
+  inset: inset,
+  radius: radius,
+)[*gRPC*]

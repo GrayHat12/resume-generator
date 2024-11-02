@@ -11,6 +11,7 @@
   - Improved the existing PDF generation solution to be *50% faster* and *75% cheaper* on lambda.
   - Pioneered a new PDF generation solution for the next iteration of our product to increase *scalability* and *remove frontend dependency*.
   - *Leading* the recent integration of SBI requirements into our SAAS offering.
+  - Built a logging microservice to be able to collate data across our multiplarform offerings using *gRPC* to communicate
 ]
 
 #v(10pt)
