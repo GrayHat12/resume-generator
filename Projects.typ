@@ -22,7 +22,7 @@
   #stack(dir: ltr, spacing: 1fr)[
     === JSON Comparison
   ][
-    #link("https://github.com/GrayHat12/lnkd-llm-service")[
+    #link("https://github.com/GrayHat12/json-ops")[
       #fa-icon("github")
     ]
     #h(5pt)
@@ -46,7 +46,7 @@
       #fa-icon("github")
     ]
     #h(5pt)
-    #link("https://grayhat12.github.io/pymhash/pymhash.html")[
+    #link("https://grayhat12.github.io/pymhash")[
       #fa-icon("book")
     ]
   ]
