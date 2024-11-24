@@ -4,8 +4,6 @@
     keywords: ("resume", "rahul", "sde", "backend", "engineer"),
 )
 
-#show link: underline
-
 #include "Profile.typ"
 
 #v(10pt)
@@ -15,6 +13,10 @@
 #v(10pt)
 
 #include "Experience.typ"
+
+#v(10pt)
+
+#include "Projects.typ"
 
 #v(10pt)
 
