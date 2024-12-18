@@ -9,7 +9,7 @@
   ]
   _Karza Technologies_
   - Improved the existing PDF generation solution to be *90% faster* and *75% cheaper* on lambda.
-  - Built a *golang* logging microservice for effective quota management across our multiplarform offerings using *gRPC*.
+  - Built a *golang* logging microservice for effective quota management across our multiplatform offerings using *gRPC*.
   - *Leading* the integration of SBI requirements into our SAAS offering.
   - *Reverse Engineered* an application to make our offering *30x faster* and cheaper.
 ]
