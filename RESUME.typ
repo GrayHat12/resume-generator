@@ -6,18 +6,18 @@
 
 #include "Profile.typ"
 
-#v(10pt)
+#v(1pt)
 
 #include "Skills.typ"
 
-#v(10pt)
+#v(1pt)
 
 #include "Experience.typ"
 
-#v(10pt)
+#v(1pt)
 
 #include "Projects.typ"
 
-#v(10pt)
+// #v(1pt)
 
-#include "Education.typ"
+// #include "Education.typ"

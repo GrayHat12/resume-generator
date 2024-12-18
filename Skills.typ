@@ -29,11 +29,6 @@
   fill: fill,
   inset: inset,
   radius: radius,
-)[*System Design*]
-#box(
-  fill: fill,
-  inset: inset,
-  radius: radius,
 )[*Web Technologies*]
 #box(
   fill: fill,
@@ -49,14 +44,34 @@
   fill: fill,
   inset: inset,
   radius: radius,
-)[*A/B Testing*]
-#box(
-  fill: fill,
-  inset: inset,
-  radius: radius,
 )[*Machine Learning*]
 #box(
   fill: fill,
   inset: inset,
   radius: radius,
 )[*gRPC*]
+#box(
+  fill: fill,
+  inset: inset,
+  radius: radius,
+)[*WASM*]
+#box(
+  fill: fill,
+  inset: inset,
+  radius: radius,
+)[*Reverse Engineering*]
+#box(
+  fill: fill,
+  inset: inset,
+  radius: radius,
+)[*Low Level Design*]
+#box(
+  fill: fill,
+  inset: inset,
+  radius: radius,
+)[*RabbitMQ / Redis*]
+#box(
+  fill: fill,
+  inset: inset,
+  radius: radius,
+)[*Ollama / LocalGPT / RAGs*]

@@ -8,13 +8,13 @@
     Apr 2024 - Present
   ]
   _Karza Technologies_
-  - Improved the existing PDF generation solution to be *50% faster* and *75% cheaper* on lambda.
-  - Pioneered a new PDF generation solution for the next iteration of our product to increase *scalability* and *remove frontend dependency*.
-  - *Leading* the recent integration of SBI requirements into our SAAS offering.
-  - Built a logging microservice to be able to collate data across our multiplarform offerings using *gRPC* to communicate
+  - Improved the existing PDF generation solution to be *90% faster* and *75% cheaper* on lambda.
+  - Built a *golang* logging microservice for effective quota management across our multiplarform offerings using *gRPC*.
+  - *Leading* the integration of SBI requirements into our SAAS offering.
+  - *Reverse Engineered* an application to make our offering *30x faster* and cheaper.
 ]
 
-#v(10pt)
+#v(2pt)
 
 #block(breakable: false)[
     #stack(dir: ltr, spacing: 1fr)[
@@ -23,14 +23,15 @@
     Jul 2022 - Apr 2024
   ]
   _Karza Technologies_
-  - Developed a plug and play GSP module to *optimize calls* *reducing our cost*, providing *fallback mechanisms*, *rate limits* and *quota controls* for GSP usage in our services.
-  - Collaborated with the data science team to develop an *in-house PDF parsing* solution for GST reports *saving cost* on third party dependencies.
+  - Developed a plug and play GSP module to *optimize calls* *reducing our costs by 30%*, providing *fallback mechanisms*, *rate limits* and *quota controls* for GSP usage in our services.
+  - Collaborated with the data science team to develop an *in-house PDF parsing* solution for GST reports *saving cost on third party licensing*.
+  - *Reverse Engineered* an application for a new offering in our product.
   - Developed a *CLI tool* enabling developers to test our serverless code locally enabling *faster development*.
-  - Redesigned various client and internal configurations allowing *easier control*, more *scalable design* and ensuring our client's *on-premise deployment needs*.
+  - Redesigned various configurations allowing *easier control*, more *scalable design* and ensuring our client's *on-premise deployment needs*.
   - Created *configuration driven plugins* for our *webhook module* to support different *Authentication and Encryption* requirements in our product.
 ]
 
-#v(10pt)
+#v(2pt)
 
 #block(breakable: false)[
   #stack(dir: ltr, spacing: 1fr)[
@@ -41,12 +42,12 @@
   _Karza Technologies_
   - Worked on the development of *FIU product* following all compliances.
   - Contributed to an organization level *webhook module* implementing *PGP and JWT* authentication.
-  - Streamlined the *billing systems* *improving dashboard latencies* and *reducing invoicing time* from days to minutes.
+  - Streamlined the *billing systems* *improving dashboard latencies* and *reducing invoicing time* from *days to minutes*.
   - Contributed to an organization wide on-demand *encryption module*.
   - Built an *HA-Proxy monitoring* solution with email alerts and a *desktop application*.
 ]
 
-#v(10pt)
+#v(2pt)
 
 #block(breakable: false)[
   #stack(dir: ltr, spacing: 1fr)[
@@ -60,7 +61,7 @@
   - Developed an *SMS categorization* and *parsing/data extraction module* using ML that powered our *B2C mobile application*.
 ]
 
-#v(10pt)
+#v(2pt)
 
 #block(breakable: false)[
   #stack(dir: ltr, spacing: 1fr)[
