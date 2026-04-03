@@ -43,6 +43,7 @@
 #set text(
   font: "Lexend",
   size: 9.328487pt,
+  hyphenate: false,
 )
 
 #v(0pt)
@@ -96,9 +97,9 @@
           )[Senior Software Engineer with more than 3 years of experience specializing in designing and building
             robust backend systems. Proficient with AWS and similar cloud service offerings. Experience securing and breaking Fingerprinting and Security SDKs. Passionate about designing solutions.]
         ],
-        align(horizon, box(width: 25%)[
-          #align(right + horizon, circle-image("handsome.png", radius: 45pt))
-        ]),
+        // align(horizon, box(width: 25%)[
+        //   #align(right + horizon, circle-image("profile.jpeg", radius: 45pt))
+        // ]),
       )
     ]
   })
@@ -117,7 +118,7 @@
       socialLink(fa-envelope, "mailto:rahul.works.sde@gmail.com", "rahul.works.sde@gmail.com"),
       socialLink(fa-mobile, "tel:+919818559742", "+91 9818559742"),
 
-      socialLink(fa-location-dot, "", "Bengaluru"),
+      socialLink(fa-location-dot, "📍", "Bengaluru"),
       socialLink(fa-linkedin, "https://www.linkedin.com/in/grayhat/", "linkedin.com/in/grayhat"),
 
       socialLink(fa-github, "https://github.com/grayhat12", "github.com/grayhat12"),
@@ -148,7 +149,11 @@
 }
 
 #let sectionSubTitle(label) = {
-  return text(fill: black, weight: "regular", size: 1em, label)
+  if type(label) == str {
+    return text(fill: black, weight: "regular", size: 1em, label)
+  } else {
+    return link(label.url, [#label.label#h(5pt)#fa-up-right-from-square(size: 0.6em)])
+  }
 }
 
 #let titleMetadata(label, weight: "light") = {
@@ -199,6 +204,39 @@
   ]
 }
 
+#let simpleSkillsRenderer(..skills) = {
+  let inset = 6pt
+  let radius = 3pt
+  let fill = rgb("#989DA6")
+  let weight = "regular"
+  let size = 0.8em
+  let index = 0
+  return [
+    #columns(
+      2,
+      for item in skills.pos() {
+        [
+          - #item
+          #if (index > skills.pos().len() / 2 - 2) {
+            colbreak()
+            index = 0
+          } else {
+            index += 1
+          }
+        ]
+        // [
+        //   #box(fill: fill, inset: inset, radius: radius, text(
+        //     fill: white,
+        //     weight: weight,
+        //     size: size,
+        //     item,
+        //   ))
+        // ]
+      },
+    )
+  ]
+}
+
 #let projectRenderer(name, url: none, tech, ..points) = {
   let techSubtitle = ""
   if tech.len() > 0 {
@@ -236,48 +274,48 @@
       #linebreak()
 
       #workExperience(
+        "Senior Software Engineer",
+        (label: "Perfios", url: "https://perfios.ai/"),
+        "10/2025 - Present",
+        [Building Device and Browser *Fingerprinting + Security* Solutions],
+        [Designing scalable, high traffic system (150 million requests per client per day with 100ms p95 latency)],
+      )
+      #v(5pt)
+      #workExperience(
         "Software Engineer",
-        "Bureau ID",
-        "04/2025 - Present",
-        [Building Compliance Product],
-        [Designing Vault and Core API framework.],
-        [Auditing and securing device and browser fingerprinting systems.],
+        (label: "Bureau ID", url: "https://bureau.id/"),
+        "04/2025 - 10-2025",
+        [Reverse Engineered, Designed systems for the *Compliance* Product.],
+        [Redesigned Vault and Core API framework to improve development velocity for new apis and introduce customisations],
+        [Reverse Engineered malwares as a part of research and development.],
+        [Performed audits to secure device and browser fingerprinting systems.],
       )
       #v(5pt)
       #workExperience(
         "Senior Software Engineer",
-        "Karza Technologies",
+        (label: "Karza Technologies", url: "https://www.linkedin.com/company/karza-technologies/"),
         "04/2024 - 03/2025",
         [Improved the existing *PDF generation* solution to be *50% faster and 75% cheaper* on lambda.],
         [*Led client integrations* for *on-premise SAAS deployments* while managing third party integrations, *rate limits*, *quota controls*, and *billing*.],
         [Developed *scalable and secure microservices* having sub second latencies for the GST-ITR product. These services assist banks & NBFCs in evaluating and processing GST, income tax returns (ITR); enabling improved credit decision making.],
-        [Contributing to the overall *system design* of GST-ITR application, participating in *client calls* to gather requirements and later incorporating them in our application.],
+        [Contributing to the overall *system design* of GST-ITR application, participating in *client calls* to discuss requirements and incorporate them in our application.],
       )
       #v(5pt)
       #workExperience(
         "Software Engineer",
-        "Karza Technologies",
+        (label: "Karza Technologies", url: "https://www.linkedin.com/company/karza-technologies/"),
         "07/2022 - 04/2024",
-        [Designed and developed a *decision making integration layer* for fetching GST data that is being used across the GST Product.],
+        [Designed and developed a *decision making integration layer* for fetching GST data that is being used across the GST Product which reduces new integration times from month to a day.],
         [*Collaborated* with the data science team to develop an *in-house PDF parsing solution* for GST reports *saving cost* on third party licensing.],
-        [Worked on *dev-tools* across the organization to help our workflows and ease local testing.],
+        [Build internal *developer tooling* across the organization to help our workflows and ease local testing.],
         [Created a *plugin system for webhook module* that allows for *OAuth and Encryption support*.],
       )
       #v(5pt)
-      #workExperience(
-        "Software Engineer Intern",
-        "Karza Technologies",
-        "12/2021 - 07/2022",
-        [Worked on the development of *FIU product* following all compliances.],
-        [Contributed to an *organization level webhook module* implementing *PGP and JWT authentication*.],
-        [*Streamlined the billing systems* *improving dashboard latencies* and *reducing invoicing time* from days to minutes.],
-        [Built an *HA-Proxy monitoring and alert solution* with a desktop application.],
-      )
       #colbreak()
       #sectionHeading("skills")
       #linebreak()
 
-      #skillsRenderer(
+      #simpleSkillsRenderer(
         "AWS Lambda / SQS / EC2 / ECS",
         // "Docker",
         "Flask",
@@ -293,12 +331,21 @@
         "Rust",
         "Browser Fingerprinting",
         "Serverless",
-        "Crawling / Scraping",
+        // "Crawling / Scraping",
+        "Automated Data Aggregations",
       )
 
       #sectionHeading("personal projects")
       // #linebreak()
 
+      #projectRenderer(
+        "helium",
+        ("C++", "Assembly [x86 nasm]"),
+        url: "https://github.com/GrayHat12/helium",
+        "A compiler that compiles simple high level code directly to assembly",
+        "The main aim here was to experience grammar, tokenisers, parsers and abstract syntax trees along with some hands on assembly",
+      )
+      #v(5pt)
       #projectRenderer(
         "goga",
         ("Golang",),
@@ -351,3 +398,100 @@
     ],
   ),
 )
+
+// #pagebreak()
+
+// #let overlay(img, color) = layout(bounds => {
+//   let size = measure(img, ..bounds)
+//   img
+//   place(top + left, block(..size, fill: color))
+// })
+
+// #set page(
+//   margin: 0pt,
+//   background: overlay(image("./assets/dil.png", fit: "cover", scaling: "smooth"), white.transparentize(25%)),
+// )
+
+// #box(width: 100%, fill: rgb("#232A33"), inset: 0pt, outset: 0pt)[
+//   #box(width: 100%, inset: (
+//     top: 10pt,
+//     left: 4%,
+//     right: 4%,
+//     bottom: 10pt,
+//   ))[
+//     #text(
+//       fill: white,
+//       size: 0.8em,
+//       weight: "regular",
+//     )[
+//       Woah ! Page 2
+
+//       List of some less relevant but good internship experiences.
+
+//       I don't expect people to read through this
+//     ]
+//   ]
+// ]
+
+// #pageWithMargins(
+//   columns(
+//     2,
+//     [
+//       #sectionHeading("INTERN EXPERIENCE")
+//       #linebreak()
+//       #v(5pt)
+//       #workExperience(
+//         "Software Engineer Intern",
+//         (label: "Karza Technologies", url: "https://www.linkedin.com/company/karza-technologies/"),
+//         "12/2021 - 07/2022",
+//         [Worked on the development of *FIU product* following all compliances.],
+//         [Contributed to an *organization level webhook module* implementing *PGP and JWT authentication*.],
+//         [*Streamlined the billing systems* *improving dashboard latencies* and *reducing invoicing time* from days to minutes.],
+//         [Built an *HA-Proxy monitoring and alert solution* with a desktop application.],
+//       )
+//       #v(5pt)
+//       #workExperience(
+//         "Fullstack Engineer Intern",
+//         (label: "Fridayy AI", url: "https://www.linkedin.com/company/fridayy-ai/"),
+//         "08/2021 - 02/2022",
+//         [Worked with the CTO to get build a go to market solution.],
+//         [Built a B2B web app along with a rule engine for creating and deploying smart campaign contracts to lambda function.],
+//         [Built an SMS categorization and parsing/data extraction module using ML that powered our B2C mobile application],
+//         [Built the backend microservices for the B2C application.],
+//       )
+//       #v(5pt)
+//       #workExperience(
+//         "Fullstack Engineer Intern",
+//         (label: "Referplease", url: "https://www.linkedin.com/company/referplease/"),
+//         "03/2021 - 08/2022",
+//         [Trained a neural network moderator for the platform.],
+//         [Built a web scraping solution to regularly scrape multiple sources and find relevant tech job referral posts, verify them with our moderator and add them to the platform.],
+//         [Built a PWA that functions as a mobile, desktop and web app.],
+//         [Worked with the founders in assisting our users, technical support, A/B Testing and customer feedback.],
+//       )
+//       #v(5pt)
+//       #workExperience(
+//         "Software Engineer Intern",
+//         (label: "Chefkart", url: "https://www.linkedin.com/company/chefkart/"),
+//         "06/2020 - 09/2020",
+//         [First time working on backend.],
+//         [Built a web app on ReactJS],
+//         [Used Ionic Framework to built a Cross Platform Mobile Application.],
+//         [Built multiple Capacitor Plugins to resolve issues with the then available official plugins.],
+//       )
+
+//       #colbreak()
+//       #align(center)[
+//         #image("./assets/sick.png")
+//         #v(20pt)
+//         Some Images to fill this empty space
+//         #v(20pt)
+//         #image("./assets/expectations.png")
+//         #v(20pt)
+//         A cat
+//         #v(20pt)
+//         #image("./assets/meowdy.png", height: 200pt)
+//       ]
+//     ],
+//   ),
+// )
