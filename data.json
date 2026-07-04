@@ -2,7 +2,15 @@
     "document": {
         "title": "Rahul's Resume",
         "author": "Rahul Singh",
-        "keywords": ["resume", "rahul", "sde", "backend", "engineer", "open source", "software engineer"]
+        "keywords": [
+            "resume",
+            "rahul",
+            "sde",
+            "backend",
+            "engineer",
+            "open source",
+            "software engineer"
+        ]
     },
     "template": "default_template.typ",
     "showLinkUnderlines": true,
@@ -32,7 +40,20 @@
         "spacing": 2,
         "fill": "#e6e6e6",
         "heading": "Skills",
-        "items": ["MongoDb", "Python / Golang / Java / JS / Rust", "Docker", "API Design", "System Design", "Web Technologies", "Amazon Web Services", "Performance Optimization", "A/B Testing", "Machine Learning"]
+        "items": [
+            "MongoDb / SQL",
+            "Python / Golang / Java / JS / Rust",
+            "Docker",
+            "Security",
+            "API Design",
+            "System Design",
+            "Web Technologies",
+            "AWS / Lambda / SQS / Redis / Valkey / Kafka",
+            "Performance Optimization",
+            "A/B Testing",
+            "Machine Learning",
+            "Reverse Engineering"
+        ]
     },
     "sectionSpacing": 10,
     "sections": {
@@ -40,9 +61,31 @@
             "blockSpacing": 10,
             "blocks": [
                 {
-                    "title": "Senior Member Technical Team",
+                    "title": "Senior Software Engineer",
+                    "subtitle": "_Perfios_",
+                    "subtext": "Oct 2025 - Present",
+                    "points": [
+                        "Built Device/Browser *Fingerprinting and Security* solutions for high traffic systems.",
+                        "Designed a scalable backend architecture handling *150 million requests* per client per day with *100ms p95 latency*.",
+                        "*Reverse Engineered* our Android SDK to discover vulnerabilities and recommend patches.",
+                        "Designed a highly efficient dashboard service that *saves upto 95% on storage cost* while service at sub second latencies.",
+                        "Designed a *no-code API Testing Framework* that integrates into our *CI/CD pipeline* and can be managed by the QA team to run automated tests with code push used across the organisation bringing testing efforts down *from days to minutes*."
+                    ]
+                },
+                {
+                    "title": "Software Engineer",
+                    "subtitle": "_Bureau ID_",
+                    "subtext": "Apr 2025 - Oct 2025",
+                    "points": [
+                        "Worked on the *Compliance* Product contributing to GST and scraping efforts.",
+                        "Designed Vault and contributed to the design of the Core API Framework.",
+                        "Audited and secured device and browser fingerprinting and security systems."
+                    ]
+                },
+                {
+                    "title": "Senior Software Engineer",
                     "subtitle": "_Karza Technologies_",
-                    "subtext": "Apr 2024 - Present",
+                    "subtext": "Apr 2024 - Mar 2025",
                     "points": [
                         "Improved the existing PDF generation solution to be *50% faster* and *75% cheaper* on lambda.",
                         "Pioneered a new PDF generation solution for the next iteration of our product to increase *scalability* and *remove frontend dependency*.",
@@ -77,6 +120,7 @@
                     "title": "Software Engineer Intern",
                     "subtitle": "_Fridayy AI_",
                     "subtext": "Aug 2021 - Dec 2021",
+                    "disable": true,
                     "points": [
                         "Developed the *microservices* architecture backend for a *B2C application* running on *ECS*.",
                         "Developed a *B2B web application* that consists of a *rule engine* for creating and deploying smart campaign contracts to lambda function.",
@@ -87,11 +131,26 @@
                     "title": "Software Engineer Intern",
                     "subtitle": "_ReferPlease_",
                     "subtext": "Dec 2021 - Jul 2022",
+                    "disable": true,
                     "points": [
                         "Developed a *neural network* that works as a *moderator* for the platform.",
                         "Developed a *web scraping* solution to scrape multiple sources, find relevant tech job referral posts, verify them with our moderator and add them to the platform.",
                         "Developed a *PWA* for the platform that functions as a mobile, desktop and web app.",
                         "Worked with the founders in assisting our users, technical support, *A/B Testing and customer feedback*."
+                    ]
+                }
+            ]
+        },
+        "Projects": {
+            "blockSpacing": 10,
+            "blocks": [
+                {
+                    "title": "helium",
+                    "subtitle": "_C++, Assembly (x86 nasm)_",
+                    "subtext": "",
+                    "points": [
+                        "A compiler that compiles simple high level code directly to assembly.",
+                        "The main aim here was to experience writing grammar, tokenisers, parsers and abstract syntax trees along with some hands on assembly"
                     ]
                 }
             ]
@@ -111,6 +170,7 @@
     "renderOrder": [
         "$skills",
         "Experience",
+        "Projects",
         "Education"
     ]
 }
