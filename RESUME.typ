@@ -95,7 +95,7 @@
             weight: "light",
             size: 0.8em,
           )[Senior Software Engineer with more than 3 years of experience specializing in designing and building
-            robust backend systems. Proficient with AWS and similar cloud service offerings. Experience securing and breaking Fingerprinting and Security SDKs. Passionate about designing solutions.]
+            robust backend systems. Proficient with AWS and cloud service offerings with expertise in securing and breaking fingerprinting and security SDKs. Proven track record in optimizing system performance, reducing costs, and leading integrations for scalable, high traffic applications.]
         ],
         // align(horizon, box(width: 25%)[
         //   #align(right + horizon, circle-image("profile.jpeg", radius: 45pt))
@@ -173,7 +173,7 @@
     #linebreak()
     #titleMetadata("Achievements/Tasks")
 
-    #text(size: 0.8em, weight: "light")[
+    #text(size: 0.794em, weight: "light")[
       #for item in tasks.pos() {
         [
           - #item
@@ -277,18 +277,19 @@
         "Senior Software Engineer",
         (label: "Perfios", url: "https://perfios.ai/"),
         "10/2025 - Present",
-        [Building Device and Browser *Fingerprinting + Security* Solutions],
-        [Designing scalable, high traffic system (150 million requests per client per day with 100ms p95 latency)],
+        [Built Device/Browser *Fingerprinting and Security* solutions for high traffic systems.],
+        [Designed scalable backend architecture handling *150 million requests* per client per day with *100ms p95 latency*.],
+        [*Reverse Engineered* our Android SDK to discover vulnerabilities and recommend patches.],
       )
       #v(5pt)
       #workExperience(
         "Software Engineer",
         (label: "Bureau ID", url: "https://bureau.id/"),
         "04/2025 - 10-2025",
-        [Reverse Engineered, Designed systems for the *Compliance* Product.],
-        [Redesigned Vault and Core API framework to improve development velocity for new apis and introduce customisations],
-        [Reverse Engineered malwares as a part of research and development.],
-        [Performed audits to secure device and browser fingerprinting systems.],
+        [Reverse Engineered and designed systems for the *Compliance* Product.],
+        [Redesigned Vault and Core API framework to *improve development velocity* for new apis and introduce customisations],
+        [*Reverse Engineered malwares* as a part of research and development.],
+        [Performed audits to *secure device and browser fingerprinting systems*.],
       )
       #v(5pt)
       #workExperience(
@@ -297,15 +298,15 @@
         "04/2024 - 03/2025",
         [Improved the existing *PDF generation* solution to be *50% faster and 75% cheaper* on lambda.],
         [*Led client integrations* for *on-premise SAAS deployments* while managing third party integrations, *rate limits*, *quota controls*, and *billing*.],
-        [Developed *scalable and secure microservices* having sub second latencies for the GST-ITR product. These services assist banks & NBFCs in evaluating and processing GST, income tax returns (ITR); enabling improved credit decision making.],
-        [Contributing to the overall *system design* of GST-ITR application, participating in *client calls* to discuss requirements and incorporate them in our application.],
+        [Developed *scalable and secure microservices* having sub second latencies for the GST-ITR product assisting banks & NBFCs in credit decision making.],
+        [Contributed to the overall *system design* of GST-ITR application and participated in *client calls* to discuss and incorporate requirements in our application.],
       )
       #v(5pt)
       #workExperience(
         "Software Engineer",
         (label: "Karza Technologies", url: "https://www.linkedin.com/company/karza-technologies/"),
         "07/2022 - 04/2024",
-        [Designed and developed a *decision making integration layer* for fetching GST data that is being used across the GST Product which reduces new integration times from month to a day.],
+        [Designed and developed a *decision making integration layer* for fetching GST data, reducing new integration times from months to days.],
         [*Collaborated* with the data science team to develop an *in-house PDF parsing solution* for GST reports *saving cost* on third party licensing.],
         [Build internal *developer tooling* across the organization to help our workflows and ease local testing.],
         [Created a *plugin system for webhook module* that allows for *OAuth and Encryption support*.],
